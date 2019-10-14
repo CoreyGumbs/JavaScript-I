@@ -82,7 +82,6 @@ for(let i = 0; i < inventory.length; i++){
 }
 
 //Filter
-
 const car =  inventory.filter(car=> car.id === 33);
 console.log(`Car 33 is a ${car[0].car_year} ${car[0].car_make} ${car[0].car_model}`);
 
@@ -90,13 +89,28 @@ console.log(`Car 33 is a ${car[0].car_year} ${car[0].car_make} ${car[0].car_mode
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 let lastCar = 0;
-console.log();
+
+console.log(inventory[inventory.length-1].car_make, inventory[inventory.length-1].car_model);
+
+// let result = inventory.map(car, idx => {
+//   console.log(car[idx].id);
+// });
+
+
+
+
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
 let carModelsSorted = [];
-console.log();
+
+for(i=0; i < inventory.length; i++){
+  carModels.push(inventory[i].car_model);
+}
+
+console.log( carModels.sort());
+
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
