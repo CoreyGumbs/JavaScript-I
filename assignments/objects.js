@@ -28,9 +28,29 @@ const firstIntern = {
 
 const secondIntern = {
   id: 2,
-  name: '',
+  name: 'Kennan',
   email: 'kdiben1@tinypic.com',
-  gender: ''
+  gender: 'M'
+}
+
+const thirdIntern = {
+  id: 3,
+  name: 'Keven',
+  email: 'kmummery2@wikimedia.org',
+  gender: 'M'
+}
+const fourthIntern = {
+  id: 4,
+  name: 'Gannie',
+  email: 'gmartinson3@illinois.edu',
+  gender: 'M'
+}
+
+const fifthIntern = {
+  id: 5,
+  name: 'Antoinetta',
+  email: 'adaine5@samsung.com',
+  gender: 'F'
 }
 
 // ==== Challenge 2: Reading Object Data ==== 
