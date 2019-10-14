@@ -81,6 +81,10 @@ for(let i = 0; i < inventory.length; i++){
   }
 }
 
+//Filter
+
+const car =  inventory.filter(car=> car.id === 33);
+console.log(`Car 33 is a ${car[0].car_year} ${car[0].car_make} ${car[0].car_model}`);
 
 
 // ==== Challenge 2 ====
